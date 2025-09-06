@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>City Drive Tour — Explore Osh</title>
+  <meta name="description" content="Comfortable city drive tours in Osh with a local guide. See Suleiman-Too, Osh Bazaar, historic streets and hidden gems." />
+  <style>
+    :root {
+      --bg: #0e6ba8;
+      --bg2: #0f9d58;
+      --text: #0f172a;
+      --muted: #334155;
+      --card: #ffffff;
+      --accent: #0ea5e9;
+      --radius: 18px;
+      --shadow: 0 10px 25px rgba(0,0,0,.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: linear-gradient(145deg, var(--bg) 0%, var(--bg2) 100%);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .hero {
+      background: rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      padding: 36px 28px 46px;
+      color: #fff;
+      text-align: center;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(6px);
+    }
+    .title {
+      font-size: clamp(28px, 5vw, 44px);
+      margin: 6px 0 8px;
+      font-weight: 800;
+      letter-spacing: .3px;
+    }
+    .tagline {
+      font-size: clamp(16px, 2.5vw, 20px);
+      opacity: .95;
+      margin: 0;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 26px;
+      margin-top: 20px;
+      box-shadow: var(--shadow);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 840px) {
+      .grid { grid-template-columns: 1.2fr 1fr; gap: 22px; }
+    }
+    h2 { margin: 6px 0 14px; font-size: 22px; }
+    ul { padding-left: 18px; margin: 0; }
+    .booking { display:flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+    .qr { width: 220px; max-width: 40vw; border-radius: 12px; border: 1px solid #e5e7eb; box-shadow: var(--shadow); background:#fff; }
+    .cta {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 18px;
+      background: var(--accent);
+      color: white;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: var(--shadow);
+    }
+    .footer {
+      color: #e6f9ff;
+      text-align: center;
+      font-size: 14px;
+      margin: 22px 0 8px;
+      opacity: .9;
+    }
+    .badge {
+      display:inline-block;
+      background:#ffffff;
+      color:#0b4a6f;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-weight:700;
+      box-shadow: var(--shadow);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <div class="badge">City Drive Tour / АвтоТурОш</div>
+      <h1 class="title">City Drive Tour — Explore Osh</h1>
+      <p class="tagline">“Every street tells a new story”</p>
+    </div>
+
+    <div class="grid">
+      <section class="card">
+        <h2>About Tour</h2>
+        <p>Join us for a comfortable city drive and discover the most beautiful spots of Osh. See the mountains, historic streets, and hidden gems with a local guide!</p>
+        <h2>Tour Highlights</h2>
+        <ul>
+          <li>Suleiman-Too Mountain 🏔️</li>
+          <li>Osh Bazaar 🛍️</li>
+          <li>Historic streets of the city 🏛️</li>
+          <li>Local sights and hidden gems ✨</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Booking</h2>
+        <div class="booking">
+          <img class="qr" src="city-drive-tour-qr.jpg" alt="WhatsApp QR to book your tour" />
+          <div>
+            <p>Scan the QR code or contact us directly to book your tour!</p>
+            <p><strong>Guide:</strong> Sanjar<br />
+               <strong>Phone / WhatsApp:</strong> +996 755 540 511
+            </p>
+            <a class="cta" href="https://wa.me/">Chat on WhatsApp</a>
+            <p style="margin-top:10px; font-size:12px; color:#475569;">Tip: If the button doesn't open, use your phone camera to scan the QR.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <p class="footer">© City Drive Tour — Explore Osh. All rights reserved.</p>
+  </div>
+</body>
+</html>
